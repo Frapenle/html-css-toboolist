@@ -11,3 +11,9 @@ header {
 #logo {
     height: 100px;
 }
+
+header > h1{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 100px;
+}
