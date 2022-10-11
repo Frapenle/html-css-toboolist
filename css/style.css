@@ -1,13 +1,13 @@
 * {
     margin: 0 auto;
     padding: 0;
-    box-si
-    zing: border-box;
+    box-sizing: border-box;
 }
 
 button {
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .tridown {
@@ -17,7 +17,7 @@ button {
 
 /* buttons colors */
 .blue-bt {
-    background-color: rgb(99 171 235);
+    background-color: rgb(99, 171, 235);
 }
 
 .violet {
@@ -81,12 +81,12 @@ main {
     border-bottom: 2px solid rgb(246, 248, 249);
 }
 
-li > button {
+.btn-style {
+    color: white;
+    font-size: 0.7rem;
     padding: 5px 8px;
     border-radius: 10px;
-    background-color: blue;
-    margin-left: 0.5rem;
-    
+    margin-left: .5rem;
 }
 
 .add-task,
@@ -96,11 +96,22 @@ li > button {
     border-radius: 0.3rem;
 }
 
+.add-task:hover {
+    background-color: rgba(99, 171, 235, 0.8);
+}
+
+.add-section:hover {
+    color: grey;
+    border: 1px solid grey;
+}
+
 .add-section {
     color: rgb(187, 187, 187);
     border: 1px solid rgb(187, 187, 187);
     background-color: white;
 }
+
+/* list stile */
 
 .new-task,
 .today,
@@ -114,8 +125,14 @@ ul {
 }
 
 li {
-    padding: 0.3rem 0;
+    padding: 0.8rem 0;
 }
+
+li > span {
+    cursor: pointer;
+}
+
+/* title and sub task */
 
 .main-task {
     font-size: 1.5rem;
@@ -124,8 +141,10 @@ li {
 
 .sub-task {
     font-size: 1rem;
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
 }
+
+/* checked x style */
 
 .circle-check {
     font-size: 0.7rem;
