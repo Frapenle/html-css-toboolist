@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.font-white {
+    color: white;
+}
+
 .container {
     background-color: rgb(246 248 249);
     width: 100vw;
@@ -34,6 +38,39 @@ main {
 }
 
 .menu {
-    height: 50px;
+    padding-left: 3rem;
+    height: 3rem;
     border-bottom: 2px solid rgb(246, 248, 249);
 }
+
+button {
+    border: none;
+}
+
+.add-task,
+.add-section {
+    padding: 0.3rem 0.8rem;
+    margin-top: 0.75rem;
+    border-radius: 0.3rem;
+}
+
+.add-section {
+    color: rgb(187, 187, 187);
+    border: 1px solid rgb(187, 187, 187);
+    background-color: white;
+}
+
+.blue-bg  {
+    background-color: rgb(99 171 235);
+}
+
+.new-task {
+    margin-top: 2rem;
+    padding-left: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+
