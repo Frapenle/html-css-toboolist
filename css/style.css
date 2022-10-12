@@ -4,19 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(246 248 249);
+}
+
 button {
     border: none;
     color: white;
     cursor: pointer;
 }
 
-.tridown {
-    font-size: 1rem;
+/* !     "::after 23F7" doesn't work on mac os browser      */
+.triangle-down {
+    font-size: 1.7rem;
     margin-right: 0.5rem;
-}
+} 
 
-/* buttons colors */
-.blue-bt {
+/*      colors      */
+.lightcyan {
     background-color: rgb(99, 171, 235);
 }
 
@@ -42,37 +48,31 @@ button {
     color: white;
 }
 
-/* header */
+/*      header      */
 
 header {
     background-color: white;
-    width: 100%;
 }
 
 #logo {
-    height: 4rem;
+    height: 5rem;
 }
 
-header>h1 {
+header > h1 {
     display: inline-block;
     vertical-align: top;
-    line-height: 4rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
 }
 
-/* style tasks */
-
-.container {
-    background-color: rgb(246 248 249);
-    width: 100vw;
-    height: 100vh;
-}
+/*      style tasks         */
 
 main {
-    margin-top: 4rem;
+    margin-top: 3rem;
     border-radius: 10px;
     background-color: white;
-    width: 60vw;
-    height: 80vh;
+    width: 65%;
+    padding-bottom: 2rem;
 }
 
 .menu {
@@ -87,6 +87,7 @@ main {
     padding: 5px 8px;
     border-radius: 10px;
     margin-left: .5rem;
+    vertical-align: middle;
 }
 
 .add-task,
@@ -111,12 +112,12 @@ main {
     background-color: white;
 }
 
-/* list stile */
+/*      list      */
 
 .new-task,
 .today,
 .upcoming {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding-left: 3rem;
 }
 
@@ -125,14 +126,14 @@ ul {
 }
 
 li {
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
 }
 
 li > span {
     cursor: pointer;
 }
 
-/* title and sub task */
+/*      title and sub task       */
 
 .main-task {
     font-size: 1.5rem;
@@ -149,16 +150,19 @@ li > span {
 .circle-check {
     font-size: 0.7rem;
     color: green;
-    padding: 2px;
+    padding: 3px 5px;
     border: 1px solid green;
     border-radius: 50%;
     margin-right: 0.7rem;
+    vertical-align: top;
 }
 
 .x-red {
+    font-size: 0.8rem;
     color: red;
-    padding: 1.5px;
+    padding: 2px 6px;
     border: 1px solid red;
     border-radius: 50%;
     margin-right: 0.7rem;
+    vertical-align: top;
 }

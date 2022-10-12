@@ -6,27 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Toboolist</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap"rel="stylesheet">
 
     </head>
     <body>
-        <div class="container">
-        
-            <header>
+        <!--        HEADER      -->
+        <header>
                 <img id="logo" src="./img/logo.png" alt="logo">
                 <h1>Toboolist</h1>
             </header>
 
+                    <!--        MAIN         -->
             <main>
                 <section class="menu">
-                    <button class="add-task blue-bt font-white" type="button">Add Task</button>
+                    <button class="add-task lightcyan font-white" type="button">Add Task</button>
                     <button class="add-section" type="button">Add Section</button>
                 </section>
 
+                <!--        LIST         -->
+
                 <section class="new-task">
                     <ul>
-                        <li class="main-task"><span class="tridown">&#9660;</span><strong>New Task</strong>
+                        <li class="main-task"><span class="triangle-down">&#9662;</span><strong>New Task</strong>
                             <ul class="sub-task">
-                                <li><span class="circle-check">&check;</span>Quarterly Newsletter<span class="btn-style blue-bt">Editorial</span></li>
+                                <li><span class="circle-check">&check;</span>Quarterly Newsletter<span class="btn-style lightcyan">Editorial</span></li>
                             </ul>
                         </li>
                     </ul>
@@ -34,9 +39,9 @@
                     
                 <section class="today">
                     <ul>
-                        <li class="main-task"><span class="tridown">&#9660;</span><strong>Today</strong>
+                        <li class="main-task"><span class="triangle-down">&#9662;</span><strong>Today</strong>
                             <ul class="sub-task">
-                                <li><span class="circle-check">&check;</span>Recruiting blog post<span class="btn-style blue-bt">Editorial</span></li>
+                                <li><span class="circle-check">&check;</span>Recruiting blog post<span class="btn-style lightcyan">Editorial</span></li>
                                 <li><span class="circle-check">&check;</span>Mobile app launch<span class="btn-style violet">Q1 Goals</span></li>
                                 <li><span class="x-red">&#x2717;</span>Interview John H.<span class="btn-style green">Recruiting</span></li>
                                 <li><span class="circle-check">&check;</span>Summit update to mobile storefronts<span class="btn-style orange">Mobile</span></li>
@@ -47,18 +52,17 @@
                     
                 <section class="upcoming">
                     <ul>
-                        <li class="main-task"><span class="tridown">&#9660;</span><strong>Today</strong>
+                        <li class="main-task"><span class="triangle-down">&#9662;</span><strong>Today</strong>
                             <ul class="sub-task">
-                                <li><span class="circle-check">&#x2717;</span>Schedule meeting with Alex</li>
+                                <li><span class="x-red">&#x2717;</span>Schedule meeting with Alex</li>
                                 <li><span class="circle-check">&check;</span>Homepage refresh<span class="btn-style darkpink">Q1 Goals</span></li>
-                                <li><span class="x-red">&#x2717;</span>Onboard new sales team members<span class="btn-style darkgreen">Recruiting</span></li>
-                                <li><span class="circle-check">&check;</span>Review editorial calendar<span class="btn-style blue-bt">Mobile</span></li>
+                                <li><span class="circle-check">&check;</span>Onboard new sales team members<span class="btn-style darkgreen">Recruiting</span></li>
+                                <li><span class="circle-check">&check;</span>Review editorial calendar<span class="btn-style lightcyan">Mobile</span></li>
                             </ul>
                         </li>
                     </ul>
                 </section>
             </main>
 
-        </div>        
     </body>
 </html>
